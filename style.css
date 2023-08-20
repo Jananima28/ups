@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400&family=Arvo:ital@1&family=Audiowide&family=Bad+Script&family=Belanosima&family=Calistoga&family=Caveat:wght@600&family=Cherry+Bomb+One&family=Courgette&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500;700&family=Didact+Gothic&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Edu+SA+Beginner:wght@500;600&family=Fugaz+One&family=Geologica:wght@600&family=Goldman:wght@400;700&family=Handlee&family=Itim&family=Kaushan+Script&family=Lugrasimo&family=Merienda&family=Mitr:wght@200;300;400&family=Nunito+Sans&family=Nunito:wght@600;700;800&family=Open+Sans:wght@300&family=Orbitron:wght@500&family=Patua+One&family=Play&family=Roboto+Condensed:wght@300&family=Roboto:wght@300&family=Rokkitt:ital,wght@0,300;0,400;0,500;1,200;1,400&family=Rubik:wght@300;400&family=Space+Grotesk:wght@300;400;500&family=Tektur&family=Yanone+Kaffeesatz&family=Ysabeau+Office:wght@500&family=Ysabeau+SC:wght@500;600&family=Zilla+Slab:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+:root {
+    --primary: #06A3DA;
+    --secondary: #34AD54;
+    --light: #EEF9FF;
+    --dark: #091E3E;
+}
+
+nav {
+    height: 7vh;
+    background-color: #091e3e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #eef9ff;
+
+}
+
+.place {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 33%;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 20px;
+    margin-left: 40px;
+
+}
+
+.place i {
+    margin-right: 9px;
+}
+
+.icons {
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 12%;
+
+}
+
+.icons a {
+    color: #ffffff;
+    padding: 3px 7px;
+    border: 1px solid #ffffff;
+    font-size: 14px;
+
+}
+
+.blue {
+    background-color: #06a3da !important;
+    border: 2px solid #06A3DA !important;
+    text-decoration: none !important;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+   
+}
+
+.blue:hover{
+    color: black !important;
+}
+.btn{
+    background-color: #06a3da !important;
+    border: 2px solid #06A3DA !important;
+    text-decoration: none !important;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+   
+}
+.btn a{
+    text-decoration: none !important;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif; 
+}
+.btn a:hover{
+    color: black !important;
+}
+
+.out{
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    text-decoration: none !important;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+   
+}
+
+
+.glass a{
+    color: #06a3da !important;
+}
+.navbar{
+    position: relative;
+}
+.heroSection{
+    position: absolute;
+    /* margin-top: 50px; */
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    /* position: absolute; */
+    /* font-weight: 610; */
+}
+
+
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--primary)  !important;
+}
+
+.navbar h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+
+}
+.heroContainer{
+    width: 100%;
+}
+.heroSection{
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+}
+.carousel-caption h1,h5{
+    font-family: 'Nunito', sans-serif;
+}
+.w-100 {
+	height: 100vh;
+}
+.main .carousel-item{
+	height: 100vh;
+	min-height: 300px;
+}
+.main .carousel-caption{
+	bottom: 100px;
+	z-index: 2;
+}
+
+.main .carousel-inner::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(9, 30, 62, .7);
+	z-index: 1;
+	
+}
+.carousel-inner img{
+    width: 100rem;
+}
+
+
+
+
+.card-text{
+    font-family: 'Nunito', sans-serif;
+}
+.people i{
+    background-color: #ffffff;
+    color: #06A3DA;
+}
+.tick i{
+    background-color: #06A3DA;
+    color: #ffffff;
+}
+.happy{
+    margin-top: -50px !important;
+    z-index: 1 !important;
+    /* box-shadow: 1px 2px 2px  grey; */
+}
+.card1, .card3{
+    background-color: #06A3DA;
+      width: 440px;
+     height: 145px;
+}
+.card2{
+    background-color: #EEF9FF;
+    width: 440px;
+   height: 145px;
+}
+.head{
+    font-family: 'Nunito', sans-serif;
+    color: #06A3DA;
+    font-weight: bolder !important; 
+}
+.main-head{
+    color: #091E3E;
+    font-family: 'Nunito', sans-serif !important;
+    padding: 0 350px !important;
+    font-weight: bolder !important;
+    
+}
+.about-head{
+    color: #091E3E;
+    font-family: 'Nunito', sans-serif !important;
+    font-weight: bolder;
+}
+.bor{
+    width: 30% !important;
+    color: #06A3DA;
+    font-weight: bold !important;
+    
+}
+.bor hr{
+    border: 3px solid #06A3DA !important;
+}
+.para{
+    color: #6a6b75;
+    font-family: 'Rubik', sans-serif;
+}
+.info i{
+    color: #06A3DA;
+}
+.sans{
+    font-family: 'Nunito', sans-serif;
+    color: #091E3E;
+    /* font-weight: bolder; */
+}
+.call{
+    font-family: 'Nunito', sans-serif;
+}
+.plus{
+    color: #06A3DA;
+}
+.card-colo{
+    background-color: #EEF9FF;
+}
+.ser-icon{
+    transform: rotate(-45deg);
+    
+}
+.ser-icon i {
+    transform: rotate(45deg);
+    background-color: #06A3DA;
+    color: #ffffff;
+}
+.card-num{
+    font-family: 'Nunito', sans-serif;
+}
+.bus{
+    width: 25rem;
+}
+.req-btn{
+    background-color: #091E3E;
+    font-family: 'Nunito', sans-serif;
+    /* padding: 0 144px; */
+    width: 400px;
+
+}
+
+.input-group{
+    width: 400px !important;
+}
+.form-control{
+    width: 400px !important;
+    /* padding: 0 300px 0 10px !important; */
+}
+.member{
+    width: 400px;
+    background-color: #EEF9FF !important;
+}
+.member:hover{
+    box-shadow: 0 0 30px #DDDDDD;
+}
+.tick-ho i{
+    background-color: #06A3DA;
+    color: #ffffff;
+}
+.tick-ho{
+    margin-top: -220px;
+}
+.team-icon .tick-ho{
+    opacity: 0;
+    visibility: hidden;
+}
+.member:hover .team-icon .tick-ho{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.7s;
+    z-index: 2;
+}
+.member:hover .team-icon img{
+    transform: scale(1.1) !important;
+    overflow: hidden !important;
+    
+}
+.team-icon img{
+    transition: all 0.5s;
+}
+
+.team-icon{
+    overflow: hidden !important;
+    transition: all 0.5s;
+}
+.team-icon img::before{
+    content: '';
+	position: absolute !important;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(9, 30, 62, .7) !important;
+	z-index: 3 !important;
+}
+.tick-ho i:hover{
+    color:black !important;
+}
+.tick-ho{
+    margin-top: -200px;
+}
+.team-icon:hover img{
+    /* content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(9, 30, 62, .7) !important;
+	z-index: 1 !important; */
+}
+
+.post-card{
+    width: 400px;
+    background-color: #EEF9FF !important;
+}
+.read-btn{
+    text-decoration: none;
+    color: #06A3DA;
+    font-family: 'Rubik', sans-serif;
+}
+.design a{
+    text-decoration: none !important;
+    color: #ffffff;
+    background-color: #06A3DA;
+    font-family: 'Rubik', sans-serif;
+    margin-top: -150px;
+}
+.post-card:hover .web img{
+    transform: scale(1.1) !important;
+    overflow: hidden !important;
+    
+}
+.web img{
+    transition: all 0.5s;
+}
+
+.web{
+    overflow: hidden !important;
+    transition: all 0.5s;
+}
+.logo img{
+    height: 40px;
+    width: 120px;
+}
+.footContainer{
+    background-color: #091E3E;
+}
+.startup{
+    background-color: #06A3DA !important;
+}
+.foot-btn{
+    background-color: #091E3E;
+}
+.foot-btn a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+.form-control::placeholder{
+    font-family: 'Nunito', sans-serif;
+}
+.get p{
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+.get i{
+    color: #06A3DA;
+}
+.links{
+    margin-left: -20px;
+}
+
+.links a{
+    text-decoration: none;
+    
+}
+.links i{
+    color: #06A3DA;
+}
+.quick{
+    font-family: 'Rubik', sans-serif;
+}
+.color{
+    background-color: #06A3DA !important;
+}
+.standard{
+    width: 420px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:576px) {
+    nav {
+        display: none;
+    }
+    .happy{
+        position: absolute;
+        margin-top: 50px !important;
+        z-index: 0;
+    }
+    .navbar{
+        background-color: #ffffff;
+        color: #06A3DA !important;
+    }
+    .navbar-brand h2{
+        color: #06A3DA !important;
+        font-size: 34px;
+    }
+    .collapse{
+        background-color: #ffffff;
+        z-index: 3;
+        width: 100% !important;
+    }
+    .carousel-caption{
+    
+        margin-bottom: -85px !important;
+      
+    }
+
+   
+    .carousel-caption h5 {
+        font-size: 14px;
+        font-weight: 500 !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 23px;
+        font-weight: 600 !important;
+    }
+    .free{
+        display: flex;
+    }
+    .card1, .card2, .card3{
+        width: 100%;
+    }
+    .main-head{
+        padding: 0 !important;
+    }
+    .bus{
+        width: 100%;
+    }
+    .req-btn{
+        width: 100%;
+        padding: 0;
+    }
+    form{
+       padding: 15px 40px;
+        
+    }
+
+    .tick-ho{
+        margin-top: -270px !important;
+
+    }
+    .team{
+        width: 100%;
+    }
+    .member{
+        width: 100%;
+    }
+    .post-card{
+        width: 100%;
+    }
+    .logo{
+        width: 100%;
+    }
+    .logo img{
+        height: 25px;
+        width: 75px;
+    }
+    .carousel-inner img{
+        width: 100%;
+    }
+    .main .carousel-item{
+        height: 100%;
+        min-height: 100px;
+    }
+    .nav-item a{
+        color: black !important;
+    }
+    .startup h2 {
+        text-align: center;
+        font-size: 35px !important;
+    }
+   
+    .input-group{
+        width: 320px !important;
+    }
+    .form-control{
+        width: 320px !important;
+        
+    }
+    .req-btn{
+        width: 320px !important;
+    }
+    .standard{
+        width: 100% !important;
+    }
+    .out a{
+        padding: 5px 12px;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
